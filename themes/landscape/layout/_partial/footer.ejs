@@ -1,0 +1,14 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <% if (theme.copyright){ %>
+        <%- render(theme.copyright, 'pug'); %>
+      <% } %>
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> | 
+      <%= __('powered_by') %> <a href="<%= config.url %>" target="_blank"><%= config.title %></a>
+    </div>
+  </div>
+</footer>

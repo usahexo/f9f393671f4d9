@@ -2,4 +2,17 @@
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
+  <h3 class="widget-title">Technical Support</h3>
+  <div class="widget">
+
+  <% if (theme.jalinks && theme.jalinks.length){ %>
+            
+                <ul class="sb-submenu">
+                    <% theme.jalinks.forEach(function(item){ %>
+                    <li><a href="<%- item.link %>" class="animsition-link" rel="nofollow"><%= item.name %></a></li>
+                    <% }); %>
+                </ul>
+           
+            <% } %>
+</div>
 </aside>

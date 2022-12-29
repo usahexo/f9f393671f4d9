@@ -74,6 +74,113 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-How-to-build-a-slot-machine-for-under-$50!" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/29/How-to-build-a-slot-machine-for-under-$50!/" class="article-date">
+  <time class="dt-published" datetime="2022-12-29T04:16:41.000Z" itemprop="datePublished">2022-12-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Internet-Casino/">Internet Casino</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/29/How-to-build-a-slot-machine-for-under-$50!/">How to build a slot machine for under $50!</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-build-a-slot-machine-for-under-50"><a href="#How-to-build-a-slot-machine-for-under-50" class="headerlink" title="How to build a slot machine for under $50!"></a>How to build a slot machine for under $50!</h1><p>In this article we are going to build a slot machine for under $50. </p>
+<p>The first step is to gather the materials needed for the project. The list of materials needed are as follows:</p>
+<p>-1 x Arduino Uno Board ($25)<br>-1 x Stepper Motor Driver Board (Pololu A4988) ($12)<br>-1 x Stepper Motor (NEMA 17) ($11)<br>-1 x 10k Ohm Potentiometer (variable resistor) ($2)<br>-3 x Tactile Switches (push buttons) ($3)</p>
+<ul>
+<li>assorted hookup wire and breadboard wire ($5?)</li>
+</ul>
+<p>Total Cost: ~$54 not including shipping costs.</p>
+<p> Now that the materials have been acquired, it’s time to start assembling the project. The first step is to attach the stepper motor driver board to the Arduino Uno.  There are four pins on each board that need to be matched up: Vin, GND, Step, and Dir. Match up each pin on the driver board with its corresponding pin on the Arduino Uno using some jumper wires. NOTE: The red and black wires on the stepper motor should be attached to pins 2 and 3 on the driver board, respectively.</p>
+<pre><code>image courtesy of https://www.sparkfun.com/products/13768 
+</code></pre>
+<p> The next step is to connect the potentiometer to the Arduino Uno. There are three legs on a potentiometer: one at each end and one in the middle. Strip off a couple inches of insulation from each wire and twist them together so they form a small loop. Do this for all three wires then solder them together. Next, cut a small piece of shrink tubing and place it over the soldered connection then use a heat gun or lighter to shrink it in place. Finally, solder one end of each wire to pins A0, A1, and A2 on the Arduino Uno as shown in the diagram below:</p>
+<p>  image courtesy of <a target="_blank" rel="noopener" href="https://www.sparkfun.com/tutorials/319">https://www.sparkfun.com/tutorials/319</a> </p>
+<p> Now it’s time to attach the tactile switches to the project. Each switch has two leads: one for ground and one for signal. Solder one end of each wire to ground (GND) and signal (V+) on any of the digital pins on the Arduino Uno as shown in the diagram below:</p>
+<p>  image courtesy of <a target="_blank" rel="noopener" href="https://www.sparkfun.com/tutorials/319">https://www.sparkfun.com/tutorials/319</a> </p>
+<p>The last step is to put everything together in a nice little package! For this project I chose to use a plastic enclosure from Radio Shack (part number 270-1807). It’s an 8x5x2 inch box that costs $3.99 at Radio Shack but can be found cheaper online if you search around a bit . If you choose not use an enclosure, just make sure everything is securely fastened down so it doesn’t move around while in use.. Drill two holes in opposite corners of the enclosure for mounting the stepper motor then cut out a hole in one side of th box for access to tthe potentiometer knob . Mount everything inside th box using screws or hot glue then zip tie all of th wires together so they don’t get tangled up . Here’s what mine ended up looking like when finished:</p>
+<h1 id="How-to-build-a-slot-machine-in-less-than-an-hour"><a href="#How-to-build-a-slot-machine-in-less-than-an-hour" class="headerlink" title="How to build a slot machine in less than an hour!"></a>How to build a slot machine in less than an hour!</h1><p>Slot machines are a lot of fun and can be a profitable addition to any casino. In this article, we’re going to show you how to build your own slot machine in less than an hour!</p>
+<p>The first step is to gather the materials you’ll need. For this project, you’ll need:</p>
+<ul>
+<li><p>A breadboard</p>
+</li>
+<li><p>Jumper wires</p>
+</li>
+<li><p>A stepper motor</p>
+</li>
+<li><p>A power supply</p>
+</li>
+<li><p>A microcontroller board such as an Arduino Uno</p>
+</li>
+<li><p>Three LEDs</p>
+</li>
+<li><p>Three resistors (220 ohms)</p>
+</li>
+<li><p>One capacitor (0.1 µF)</p>
+</li>
+<li><p>One diode (1N4001)</p>
+</li>
+<li><p>One slot machine wheel (you can find these online or at a hobby store)</p>
+</li>
+</ul>
+<p>  The Arduino microcontroller is at the heart of the project and controls all the action. The code for the project can be found on our website [1]. Connect the Stepper motor, power supply, and LEDs to the Arduino as shown in the diagram below: </p>
+<p>  Once everything is connected, it’s time to write some code! The code is very simple. We start by defining the pins that we’re using: </p>
+<p>pinMode(9, OUTPUT); //Stepper Motor Pin 1 - Red Wire pinMode(10, OUTPUT); //Stepper Motor Pin 2 - Yellow Wire pinMode(11, OUTPUT); //Stepper Motor Pin 3 - Green Wire  </p>
+<p>Next, we create a function called “stepMotor” which will take two parameters - amount_of_steps and delay_in_milliseconds . This function will move the stepper motor by a given number of steps and then wait for a given number of milliseconds before moving again. We also create a variable called currentStep which keeps track of our current position in the sequence:  </p>
+<p>void stepMotor(int amount_of_steps, int delay_in_milliseconds){ int currentStep = 0; for (int i = 0; i &lt; amount_of_steps; i++){ digitalWrite(9, HIGH); //Turn ON Red Wire delayMicroseconds(delay_in_milliseconds); //Wait for Delay digitalWrite(10, LOW); //Turn OFF Yellow Wire delayMicroseconds(delay_in_milliseconds); //Wait for Delay digitalWrite(11, HIGH); //Turn ON Green Wire delayMicroseconds(delay_in_milliseconds); //Wait for Delay } currentStep++; }  </p>
+<p>Finally, we create a loop which calls our “stepMotor” function repeatedly. We also check to see if currentStep is equal to 5 (indicating that we’ve reached the end of the sequence). If so, we reset currentStep back to 0 : </p>
+<p>void loop(){ stepMotor(5, 2000); if (currentStep==5){ currentStep = 0; } }</p>
+<h1 id="How-to-make-a-slot-machine-with-common-materials"><a href="#How-to-make-a-slot-machine-with-common-materials" class="headerlink" title="How to make a slot machine with common materials!"></a>How to make a slot machine with common materials!</h1><p>Slot machines are a lot of fun and can be made with common materials. You will need a cardboard box, paper, tape, scissors, and a coin.</p>
+<p> Cut four equal length strips from the cardboard box using the scissors. These will become the sides of the slot machine.</p>
+<p>On three of the strips, cut small rectangles about 1 inch wide and 3 inches long. These will become the “windows” on the slot machine.</p>
+<p>Take one of the remaining strips and cut it into two pieces, each about 6 inches long. These will become the “arms” of the slot machine.</p>
+<p>Tape one end of each arm strip to either end of one of the window strips. Tape the other end of each arm strip to either end of one of the side strips so that there is an arm on each side of each window strip. The slot machine should now look like a rectangular prism with four arms sticking out at right angles on each face.</p>
+<p>Turn your slot machine over so that the arms are pointing down and tape a coin onto the top center of the machine so that it balances there. Your slot machine is now ready to play!</p>
+<h1 id="How-to-build-your-own-slot-machine-at-home"><a href="#How-to-build-your-own-slot-machine-at-home" class="headerlink" title="How to build your own slot machine at home!"></a>How to build your own slot machine at home!</h1><p>Building your own slot machine at home is a fun and easy project that can be completed in a weekend. You will need some basic tools and materials, including a power drill, jigsaw, clamps, wood glue, and a saw blade.</p>
+<p>The first step is to cut the pieces for the frame of the slot machine. Use a power drill to make pilot holes for the screws, then use a jigsaw to cut out the shapes. Clamp the pieces together and use wood glue to attach them. Let the glue dry overnight.</p>
+<p>Next, use a saw blade to cut out the shapes for the front and back panels of the slot machine. Drill pilot holes and use wood screws to attach them to the frame.</p>
+<p>The next step is to make the handle. Drill two pilot holes in each end and use wood screws to attach them to the front panel.</p>
+<p>The last step is to make the payout tray. Drill pilot holes in each corner and use wood screws to attach it to the back panel.</p>
+<p>Your slot machine is now complete! Have fun playing with it!</p>
+<h1 id="How-to-create-a-Slot-Machine-using-household-items"><a href="#How-to-create-a-Slot-Machine-using-household-items" class="headerlink" title="How to create a Slot Machine using household items!"></a>How to create a Slot Machine using household items!</h1><p>In this article we will be creating a Slot Machine using everyday household items that you can find in your home. This project is a fun and easy way to create your own Slot Machine, and does not require any advanced skills or tools. Lets get started!</p>
+<p>The first step is to gather the supplies you will need for this project. You will need an empty cardboard box, masking tape, scissors, a pen or pencil, a ruler, and some small coins or tokens.</p>
+<p>Next, you will need to cut the cardboard box into four equal-sized pieces using the scissors. These four pieces will be the sides of your Slot Machine.</p>
+<p>Now it’s time to start assembling the Slot Machine. Take two of the cardboard pieces and tape them together so that they form a square shape. Make sure that the two pieces are aligned properly and that there are no gaps between them. Once they are taped together, repeat this process with the other two pieces to create the second side of the Slot Machine.</p>
+<p>Now that you have created the basic structure of the Slot Machine, it’s time to add the details. Cut four small rectangular shapes out of one of the sides of the machine (see diagram). These will be the “wheels” on your Slot Machine. Tape them in place on each side of the machine as shown in the diagram.</p>
+<p>Finally, use masking tape to create a “handle” on top of your Slot Machine. This will be used to spin the wheels.</p>
+<p>Your Slot Machine is now complete! To use it, simply place some small coins or tokens in between the two sides of the machine and then spin the wheel with the handle. The slots on each side of the machine will rotate and eventually stop on one of three positions: WINNINGS, LOSE PLAYERS COINS, or FREE PLAYS. If you stop on WINNINGS then you win whatever coins are bet; if you stop on LOSE PLAYERS COINS then you lose all your coins; if you stop on FREE PLAYS then you get another chance to spin without losing any coins. Have Fun!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bohemiancastle.com/2022/12/29/How-to-build-a-slot-machine-for-under-$50!/" data-id="clc8kqr9t0000y0v5ckwabb4z" data-title="How to build a slot machine for under $50!" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-How-to-Win-at-Slot-Machines-Tips-from-the-Pros!" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/24/How-to-Win-at-Slot-Machines-Tips-from-the-Pros!/" class="article-date">
@@ -794,98 +901,6 @@
 
 
   
-    <article id="post-How-to-Find-Out-If-Your-Winnings-or-Losses-Are-Taxable" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/29/How-to-Find-Out-If-Your-Winnings-or-Losses-Are-Taxable/" class="article-date">
-  <time class="dt-published" datetime="2022-11-28T19:56:38.000Z" itemprop="datePublished">2022-11-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/gambling/">gambling</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/29/How-to-Find-Out-If-Your-Winnings-or-Losses-Are-Taxable/">How to Find Out If Your Winnings or Losses Are Taxable</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="How-to-Find-Out-If-Your-Winnings-or-Losses-Are-Taxable"><a href="#How-to-Find-Out-If-Your-Winnings-or-Losses-Are-Taxable" class="headerlink" title="How to Find Out If Your Winnings or Losses Are Taxable"></a>How to Find Out If Your Winnings or Losses Are Taxable</h1><p>When you gamble, whether it’s at the casino or with a bookie, you may be wondering if your winnings or losses are taxable. The good news is that generally, gambling winnings are not taxable. The bad news is that there are a few exceptions to this rule.</p>
-<p>Here’s a look at when gambling winnings are and are not taxable:</p>
-<ul>
-<li><p>Gambling winnings are taxable if they are considered ordinary income. This includes winnings from games of chance, such as slots, blackjack, and roulette.</p>
-</li>
-<li><p>Gambling winnings that are not considered ordinary income, such as prize money or lottery winnings, are not taxable.</p>
-</li>
-<li><p>Gambling losses are deductible up to the amount of gambling winnings. In other words, you can only deduct the amount of your losses that equals the amount of your gambling wins. So if you have $1,000 in gambling wins and $2,000 in losses for the year, you can only deduct $1,000 in losses on your tax return.</p>
-</li>
-</ul>
-<p>There are also a few special rules that apply to certain types of gambling:</p>
-<ul>
-<li><p>If you gamble on horse racing or dog racing and have net losses for the year after taking into account qualifying expenses like entry fees and betting stakes, these losses can be used to offset any other type of income you have that year. However, if your losses exceed your other income for the year, you cannot claim them as a deduction on your tax return.</p>
-</li>
-<li><p>If you gamble through an online casino and reside in a foreign country, any gambling profits you earn will be subject to U.S. taxes.</p>
-</li>
-</ul>
-<h1 id="How-to-Get-a-Receipt-of-Gambling-Winnings-and-Losses"><a href="#How-to-Get-a-Receipt-of-Gambling-Winnings-and-Losses" class="headerlink" title="How to Get a Receipt of Gambling Winnings and Losses"></a>How to Get a Receipt of Gambling Winnings and Losses</h1><p>When gambling, it is important to keep track of your winnings and losses. This information can be used to help you stay organized and in control of your gambling habits. In the United States, you are required to report your gambling winnings and losses on your income tax return.</p>
-<p>There are a few ways to get a receipt of your gambling winnings and losses. One way is to keep a physical or electronic journal of all of your gambling activity. This journal should include the date, time, location, and amount won or lost for each gambling session. You can also keep a copy of your betting slips or casino statements as proof of your wagers and winnings.</p>
-<p>Another way to get a receipt of your gambling activities is to use a third-party service such as Gambler’s Anonymous. This service will provide you with a monthly statement that details all of your gambling activity for the month. This statement will list the dates, types of games played, locations, and amounts won or lost.</p>
-<p>It is important to keep in mind that not all gambling losses are deductible on your income tax return. Gambling losses are only deductible if they exceed any gambling wins for the year. In other words, you cannot claim a loss if you did not have a net loss from all of your gambling activities. For more information about deducting gambling losses, please consult a tax professional.</p>
-<h1 id="How-to-Determine-Your-Casino-Gambling-Winnings-and-Losses"><a href="#How-to-Determine-Your-Casino-Gambling-Winnings-and-Losses" class="headerlink" title="How to Determine Your Casino Gambling Winnings and Losses"></a>How to Determine Your Casino Gambling Winnings and Losses</h1><p>Casino gambling can be thrilling and exciting, but it can also be nerve-wracking. One of the most important things to consider before stepping into a casino is understanding your risks and how to calculate your potential winnings and losses.</p>
-<p>This guide will teach you how to determine your casino gambling winnings and losses based on the games you choose to play, the stakes you play for, and the house edge of those games. We’ll also walk you through some strategies for minimizing your losses while maximizing your potential winnings. So let’s get started!</p>
-<h1 id="The-Basics-Winnings-and-Losses"><a href="#The-Basics-Winnings-and-Losses" class="headerlink" title="The Basics: Winnings and Losses"></a>The Basics: Winnings and Losses</h1><p>In order to understand how to calculate your casino gambling winnings and losses, you need to first understand a few basic concepts.</p>
-<p>When you gamble in a casino, you are essentially playing against the house. This means that the casino has an edge over you in all of the games that they offer. In some games, like blackjack or roulette, this edge is very small, while in other games, like slot machines, it can be quite large.</p>
-<p>This edge is what allows casinos to make money on gambling operations. No matter how good of a gambler you may be, over time you will always lose money if you are playing against the house edge. However, by understanding the odds of each game and employing sound betting strategies, you can reduce the amount that you lose and increase your chances of walking away with a winning hand.</p>
-<p>Now that we have covered the basics, let’s take a closer look at how to calculate your casino gambling winnings and losses.</p>
-<h1 id="Calculating-Your-Winnings-Slot-Machines"><a href="#Calculating-Your-Winnings-Slot-Machines" class="headerlink" title="Calculating Your Winnings: Slot Machines"></a>Calculating Your Winnings: Slot Machines</h1><p>The odds of winning on slot machines vary depending on the type of machine that you are playing on, but typically range from about 90% to 99%. This means that for every $100 that you bet on a slot machine, you can expect to lose between $10 and $90 in the long run. However, there is also the potential to hit big payouts worth thousands or even millions of dollars.</p>
-<p>To calculate your expected winnings on a slot machine, simply multiply your bet amount by the payout percentage multiplied by 100 (i.e., if the payout percentage is 95%, then 95 x 100 = 9500). So if you bet $10 on a slot machine with a 95% payout percentage, then over timeyou can expect to earn back $95 (rounded up). Therefore, your expected profit from betting on this machine would be $5 (($95 - $10) rounded up). Note that this calculation does not account for taxes or any other associated expenses that may come with winning a large jackpot. For more information on taxes related to gambling wins/losses see our guide “ <a target="_blank" rel="noopener" href="https://www.wtopnews.com/money/business-finance/2018/04/how-gambling-winnings-are-taxed/">How Gambling Winnings Are Taxed</a> “.</p>
-<p>Calculating Your Winnings: Table Games</p>
-<p>Table games such as blackjack or roulette offer much better odds for players than slot machines do. This is because these games involve skill as well as luck, giving players more chances to win against the house edge. The exact odds vary depending on the game and strategy employed, but typically range from about 50% all the way up to 99%. This means that for every $100 wagered over time at these tables games players can expect to lose between $50 and $99. However, there are also opportunities for big payouts if Lady Luck happens to be smiling upon you at just the right moment!</p>
-<p> To calculate your expected winnings from table games using basic strategy*, divide 1 by 19th root of 5250 (1 / 19th root of 5250), which gives us an expected earning percentage of 0 . establishments have minimum bets varying from one cent denominations all . establishments have minimum bets varying from one cent denominations all  </p>
-<p>  table below shows some common Blackjack tables found in major    Now let’s use an example . You find yourself at a Blackjack table at one local establishment with Minimum Bet = 5 dollars , so we will use 5 in our calculations . There are six players at this table , including yourself , plus dealer . dealer stands on soft 17 .</p>
-<p>Expected Winnings : 5 dollars </p>
-<p>Now let’s use an example . You find yourself at a Blackjack table at one local establishment with Minimum Bet = 5 dollars , so we will use 5 in our calculations . There are six players at this table , including yourself , plus dealer . dealer stands on soft 17 which gives the house an advantage of 0 . 3 percent .Since there are multiple player cards being played simultaneously at any give point in Blackjack , we will use an average bet per round of 3 dollars when determining Expected Winnings : 3 dollars x 0 . 03 =</p>
-<h1 id="What-Records-to-Keep-of-Casino-Gambling-Winnings-and-Losses"><a href="#What-Records-to-Keep-of-Casino-Gambling-Winnings-and-Losses" class="headerlink" title="What Records to Keep of Casino Gambling Winnings and Losses"></a>What Records to Keep of Casino Gambling Winnings and Losses</h1><p>Casino gambling can be a fun and exciting way to spend some time, but it’s important to keep track of your wins and losses so that you don’t end up losing more money than you intended. Here are some records you should keep of your casino gambling activities:</p>
-<ul>
-<li>The dates of your visits to the casino</li>
-<li>The amount of money you deposited at the casino</li>
-<li>The amount of money you won or lost during your visits</li>
-<li>The games you played and how much you wagered on each game</li>
-</ul>
-<p> Keeping records like this will help you stay aware of how much money you’re spending on casino gambling and whether or not it’s worth it. It can also help you determine which games are the most profitable for you so that you can focus on playing those games in the future.</p>
-<h1 id="How-to-Report-Gambling-Winnings-and-Losses-from-a-Casino"><a href="#How-to-Report-Gambling-Winnings-and-Losses-from-a-Casino" class="headerlink" title="How to Report Gambling Winnings and Losses from a Casino"></a>How to Report Gambling Winnings and Losses from a Casino</h1><p>If you’re a person who enjoys gambling, it’s important to keep track of your wins and losses. This is especially true if you gamble as a form of income or to make a profit. The IRS requires taxpayers to report their gambling winnings and losses on their tax return.</p>
-<p>To report your gambling winnings and losses, you first need to determine your net gambling income or loss. This is the difference between your total gambling winnings and losses for the year. Your net gambling income or loss is then included on Line 21 of your Form 1040 tax return.</p>
-<p>For example, if you had $1,000 in gambling winnings and $2,000 in losses, your net gambling income would be -$1,000. This would be reported on Line 21 of your Form 1040 tax return as Other Income.</p>
-<p>You can also use Schedule A to report your gambling losses. This is where you list all of your individual gambling transactions and the amount of each loss. You can then total up these amounts on Line 28 of Schedule A. This total is then included on Line 1 of Form 1040 as Other Miscellaneous Deductions.</p>
-<p>You can only deduct your losses up to the amount of your winnings for the year. For example, if you had $1,500 in winnings and $3,000 in losses, you can only deduct $1,500 in losses on your tax return.</p>
-<p>It’s important to keep good records of your gambling transactions so that you can accurately report them on your tax return. This includes receipts, tickets, or other documentation of the bets or wagers you made.</p>
-<p>Reporting gambling income and losses may seem like a lot of work, but it’s important to do so correctly in order to avoid any penalties from the IRS.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://bohemiancastle.com/2022/11/29/How-to-Find-Out-If-Your-Winnings-or-Losses-Are-Taxable/" data-id="clb17o3zm00009sv5fa0a1b1a" data-title="How to Find Out If Your Winnings or Losses Are Taxable" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -901,7 +916,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Aztec-Moon-Game/">Aztec Moon Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Bohemian-Castle/">Bohemian Castle</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Esports/">Esports</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Florida-Casinos/">Florida Casinos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling/">Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Greektown-Casino/">Greektown Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Play-Casino/">Play Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Roulette-Games/">Roulette Games</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/gambling/">gambling</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Aztec-Moon-Game/">Aztec Moon Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Bohemian-Castle/">Bohemian Castle</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Esports/">Esports</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Florida-Casinos/">Florida Casinos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling/">Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Greektown-Casino/">Greektown Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Internet-Casino/">Internet Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Play-Casino/">Play Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Roulette-Games/">Roulette Games</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/gambling/">gambling</a></li></ul>
     </div>
   </div>
 
@@ -933,6 +948,10 @@
       <ul>
         
           <li>
+            <a href="/2022/12/29/How-to-build-a-slot-machine-for-under-$50!/">How to build a slot machine for under $50!</a>
+          </li>
+        
+          <li>
             <a href="/2022/12/24/How-to-Win-at-Slot-Machines-Tips-from-the-Pros!/">How to Win at Slot Machines Tips from the Pros!</a>
           </li>
         
@@ -946,10 +965,6 @@
         
           <li>
             <a href="/2022/12/18/How-to-win-at-port-machine-poker-with-our-cheat-sheet!/">How to win at port machine poker with our cheat sheet!</a>
-          </li>
-        
-          <li>
-            <a href="/2022/12/15/How-to-bet-on-red-or-black-in-roulette/">How to bet on red or black in roulette</a>
           </li>
         
       </ul>
